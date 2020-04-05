@@ -16,7 +16,7 @@
             </p>
           </div>
           <div class="card-action">
-            <a class="waves-effect waves-light btn-small" style="background-color: violet;">lire plus</a>
+            <a class="waves-effect waves-light btn-small" style="background-color: violet;">plus</a>
           </div>
       </div>
     </div>
