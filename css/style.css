@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #f9fbe7!important;
+}
+/* developpement de la page d'accueil*/
+
+.lire_plus{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#horaire_agence{
+    text-align: center;
+    color: #212121  ;
+}
+#corps_acceuil{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/*****developpement de la page d'acceuil*****/
+ /*developpement de la barre de navigation*/
+.row{
+    margin: 0px;
+    padding: 0px;
+}
+ nav{
+    background-color: rgba(0, 0, 0, 0.0 )!important;
+    margin-bottom: 0px;
+    color: #212121;
+    padding: 0px;
+    margin: 0px;
+}
+#nav{
+    background-color: white!important;
+    color: #4db6ac ;
+    margin-bottom: 0px;
+}
+ #logo{
+    padding-left: 15px;
+ }
+ #entete{
+     background-color: rgba(0, 0, 0, 0.3)!important;
+ }
+.partie{
+
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+/*****developpement de la page horaire*****/
+
+#corps_horaire{
+    height: 400px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+#horaire_agence{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+/*****developpement de la page actualites*****/
+#corps_actualites{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/******developpement de la page evenement******/
+#corps_evenements{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/******developpement de la page programme******/
+#corps_programme{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.age_dep{
+    text-align: center;
+}
+/*developpement de la page admin ou action*/
+#dropdown1 li{
+    color: #00b8d4!important;
+}
+.formulaire{
+    background-color: white;
+    padding:10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: white;
+}
+#submit{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    float: right;
+}
+
+/*developpement du footer*/
+
+footer{
+    background-color: #4db6ac!important;
+    text-align: center;
+}
+footer div div h6{
+    color: #f9fbe7;
+   margin-bottom: 10px;
+}
+
+
+
+
+
