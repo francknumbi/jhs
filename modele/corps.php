@@ -16,7 +16,11 @@
             </p>
           </div>
           <div class="card-action">
+<<<<<<< HEAD
             <a class="waves-effect waves-light btn-small" style="background-color: red;">plus</a>
+=======
+            <a class="waves-effect waves-light btn-small" style="background-color: violet;">hi</a>
+>>>>>>> inoconnu
           </div>
       </div>
     </div>
