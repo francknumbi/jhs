@@ -46,6 +46,25 @@
             catch(Exception $e){
                  die('Erreur: '.$e);
             }
-         }
+        }
+        //methode d'affichage des actualites
+        public static function  afficheActu(){
+            try{
+                $connexion=Connexion::getConnexion();
+                $requette="SELECT * FROM actualites";
+                $resultat=$connexion->prepare($requette);
+                $resultat->execute();
+                if($resultat!=null){
+                    while($obj=$resultat->fetch()){
+                        $tableau[]=array( "titre"=>$obj['titre'], "contenu"=>$obj['contenu'], "datePub"=>$obj['datePub'], "image"=>$obj['image']);
+                    }
+                }
+                return $tableau;
+
+            }
+            catch(Exception $e){
+                die('Erreur: '.$e);
+            }
+        }
 
     }

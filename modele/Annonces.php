@@ -34,18 +34,37 @@
         public function getAdmin(){
             return $this->admin;
         }
-        //methode ajout
+        //methode d'ajout d'annonces
         public static function ajoutAnnon($id,$titre,$contenu,$date,$image,$admin){
             try{
                  $connexion=Connexion::getConnexion();
                  $requette="INSERT INTO annonces VALUES(?,?,?,?,?,?)";
                  $resultat=$connexion->prepare($requette);
                  $resultat->execute(array($id,$titre,$contenu,$date,$image,$admin));
-                 var_dump($resultat);
             }
             catch(Exception $e){
                  die('Erreur: '.$e);
             }
-         }
+        }
+        //methode d'affiche d'annonces
+        public static function  afficheAnnon(){
+            try{
+                $connexion=Connexion::getConnexion();
+                $requette="SELECT * FROM annonces";
+                $resultat=$connexion->prepare($requette);
+                $resultat->execute();
+                if($resultat!=null){
+                    while($obj=$resultat->fetch()){
+                        $tableau[]=array( "titre"=>$obj['titre'], "contenu"=>$obj['contenu'], "datePub"=>$obj['datePub'], "image"=>$obj['image']);
+                    }
+                }
+                return $tableau;
+
+            }
+            catch(Exception $e){
+                die('Erreur: '.$e);
+            }
+        }
+        
 
     }

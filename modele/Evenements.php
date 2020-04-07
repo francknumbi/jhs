@@ -48,16 +48,24 @@
                 die('Erreur: '.$e);
            }
         }
-        public static function recupEvent(){
+        //methode d'affichage des evenements
+        public static function  afficheEven(){
             try{
                 $connexion=Connexion::getConnexion();
-                $requette='SELECT * FROM admin';
+                $requette="SELECT * FROM evenements";
                 $resultat=$connexion->prepare($requette);
                 $resultat->execute();
-           }
-           catch(Exception $e){
+                if($resultat!=null){
+                    while($obj=$resultat->fetch()){
+                        $tableau[]=array( "titre"=>$obj['titre'], "contenu"=>$obj['contenu'], "datePub"=>$obj['datePub'], "image"=>$obj['image']);
+                    }
+                }
+                return $tableau;
+
+            }
+            catch(Exception $e){
                 die('Erreur: '.$e);
-           }
+            }
         }
         
 
