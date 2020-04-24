@@ -1,4 +1,4 @@
-import { DATA_PREVIEW } from './constants';
+import { DATA_PREVIEW } from './constants.js';
 import {
   assign,
   forEach,
@@ -7,7 +7,7 @@ import {
   removeData,
   setData,
   setStyle,
-} from './utilities';
+} from './utilities.js';
 
 export default {
   initPreview() {

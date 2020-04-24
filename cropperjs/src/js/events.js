@@ -10,12 +10,12 @@ import {
   EVENT_RESIZE,
   EVENT_WHEEL,
   EVENT_ZOOM,
-} from './constants';
+} from './constants.js';
 import {
   addListener,
   isFunction,
   removeListener,
-} from './utilities';
+} from './utilities.js';
 
 export default {
   bind() {

@@ -12,13 +12,13 @@ import {
   ACTION_WEST,
   ACTION_ZOOM,
   CLASS_HIDDEN,
-} from './constants';
+} from './constants.js';
 import {
   forEach,
   getMaxZoomRatio,
   getOffset,
   removeClass,
-} from './utilities';
+} from './utilities.js';
 
 export default {
   change(event) {

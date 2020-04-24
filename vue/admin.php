@@ -49,9 +49,12 @@
 
         </div>
 
-        <div class="col s12 m8 l9"> 
+        <div class="col s12 m8 l9" > 
             <!--le formulaire-->
             <h4 class="center" id="libele">Ajouter Evenement</h4>
+            <section id="affichage">
+                
+            </section>
             <form id="formAjout" enctype="multipart/form-data"  name="formAjout" class="col s12" method="POST" style="padding-right: 25px;padding-left: 25px" >
                 
                 <div class="row">

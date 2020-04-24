@@ -15,23 +15,126 @@
         if ($_REQUEST['option']=='evenement') {
             if($_REQUEST['fonc']=='modifier') {
                 $event=Evenements::afficheEven();
-                echo "reussite";
-                return json_encode($event);
+                foreach($event as $obj){
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                
+                echo("
+                <div class=\"col s12 m4 l4\" >
+                    <div class=\"card z-depth-3\">
+                        <div class=\"card-image\">
+                            <img src=\"../upload/$image\">
+                            <span class=\"card-title\">$titre</span>
+                            </div>
+                        <div class=\"card-content\">
+                            <p>
+                                $contenu
+                            </p>
+                        </div>
+                        <div class=\"card-action\">
+            
+                            <a class=\"waves-effect waves-light btn-small\" style=\"background-color: red;\"><i class=\"material-icons white-text\">edit</i></a>
+                        </div>
+                    </div>
+                </div>
+                ");
+                }
+                
             }
             elseif($_REQUEST['fonc']=='supprimer') {
                 $event=Evenements::afficheEven();
-                return json_encode($event);
+                foreach($event as $obj){
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                
+                echo("
+                <div class=\"col s12 m4 l4\" >
+                    <div class=\"card z-depth-3\">
+                        <div class=\"card-image\">
+                            <img src=\"../upload/$image\">
+                            <span class=\"card-title\">$titre</span>
+                            </div>
+                        <div class=\"card-content\">
+                            <p>
+                                $contenu
+                            </p>
+                        </div>
+                        <div class=\"card-action\">
+            
+                            <a class=\"waves-effect waves-light btn-small\" style=\"background-color: red;\"><i class=\"material-icons white-text\">clear</i></a>
+                        </div>
+                    </div>
+                </div>
+                ");
+                }
             }
         }
         //recuperation des infos a modifier ou a supprimer dans la table actualites
         elseif($_REQUEST['option']=='actualite') {
             if($_REQUEST['fonc']=='modifier') {
                 $actu=Actualites::afficheActu();
-                return json_encode($actu);
+                foreach($actu as $obj){
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                
+                echo("
+                <div class=\"col s12 m4 l4\" >
+                    <div class=\"card z-depth-3\">
+                        <div class=\"card-image\">
+                            <img src=\"../upload/$image\">
+                            <span class=\"card-title\">$titre</span>
+                            </div>
+                        <div class=\"card-content\">
+                            <p>
+                                $contenu
+                            </p>
+                        </div>
+                        <div class=\"card-action\">
+            
+                            <a class=\"waves-effect waves-light btn-small\" style=\"background-color: red;\"><i class=\"material-icons white-text\">edit</i></a>
+                        </div>
+                    </div>
+                </div>
+                ");
+                }
             }
             elseif($_REQUEST['fonc']=='supprimer') {
                 $actu=Actualites::afficheActu();
-                return json_encode($actu);
+                foreach($actu as $obj){
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                
+                echo("
+                <div class=\"col s12 m4 l4\" >
+                    <div class=\"card z-depth-3\">
+                        <div class=\"card-image\">
+                            <img src=\"../upload/$image\">
+                            <span class=\"card-title\">$titre</span>
+                            </div>
+                        <div class=\"card-content\">
+                            <p>
+                                $contenu
+                            </p>
+                        </div>
+                        <div class=\"card-action\">         
+                            <a class=\"waves-effect waves-light btn-small\" style=\"background-color: red;\"><i class=\"material-icons white-text\">clear</i></a>
+                        </div>
+                    </div>
+                </div>
+                ");
+                }
             }
         }
         //recuperation des infos a modifier ou a supprimer dans la table annonces
@@ -42,7 +145,33 @@
             }
             elseif($_REQUEST['fonc']=='supprimer') {
                 $annon=Annonces::afficheAnnon();
-                return json_encode($annon);
+                foreach($annon as $obj) {
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                
+                echo("
+                <div class=\"col s12 m4 l4\" >
+                    <div class=\"card z-depth-3\">
+                        <div class=\"card-image\">
+                            <img src=\"../upload/$image\">
+                            <span class=\"card-title\">$titre</span>
+                            </div>
+                        <div class=\"card-content\">
+                            <p>
+                                $contenu
+                            </p>
+                        </div>
+                        <div class=\"card-action\">
+            
+                            <a class=\"waves-effect waves-light btn-small\" style=\"background-color: red;\"><i class=\"material-icons white-text\">edit</i></a>
+                        </div>
+                    </div>
+                </div>
+                ");
+                }
             }
         }
         else {
@@ -96,9 +225,7 @@
             $destination = '../upload/'.$image;
             $copy=move_uploaded_file($photo_tmp, $destination);
             $exho=exhortations::ajoutExho('', $titre, $contenu, $date, $image, 'franck');
-        }
-           
-                 
+        }                    
     }
     
 

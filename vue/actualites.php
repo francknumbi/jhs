@@ -1,103 +1,61 @@
-<?php include('../modele/entete.php');?>
-  <body >
-    <section>
-        <?php include('../modele/menu1.php');?>
-    </section>
-    <section id="corps_actualites" class=" lime lighten-5">
-        <h5>Actualites</h5>
-        <hr>    
-        <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                    <img src="../images/IMG_20180819_114440228.jpg">
-                    </div>
-                    <div class="card-stacked">
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                    </div>
-                </div>
-        </div>
+<? include('entete.php');?>
+<body>
+    <? include('menu.php');?>
 
-        <div class="col s12 m7">
-                <div class="card horizontal">
-                    <div class="card-image">
-                    <img src="../images/IMG_20151226_101905585.jpg">
-                    </div>
-                    <div class="card-stacked">
-                    <div class="card-content">
-                        <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    </div>
-                    <div class="card-action">
-                        <a href="#">This is a link</a>
-                    </div>
-                    </div>
+
+  <body class="green lighten-5">
+    <div class="row sect">
+        <h6 class="titreActu">ACTUALITES</h6>
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
+                   
                 </div>
-        </div>
-        <div class="row ">
-            
-            <div class="col s12 m12 l12 card-panel white z-depth-1">       
-                <div class="col s12 m5 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <span class="act_img"><img src="../images/IMG_20190721_174414.jpg"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m7">
-                <!-- Teal page content  -->  
-                    <h5 class="header">Salon d'adoration</h5>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
                     <p>I am a very simple card. I am good at containing small bits of information.
-                    I am a very simple card. I am good at containing small bits of information.</p>
-                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    <h6 class="date_pub">Publiée</h6>
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
                 </div>
             </div>
-            <div class="col s12 m12 l12 card-panel white z-depth-1">       
-                <div class="col s12 m5 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <span class="act_img"><img src="../images/IMG-20160201-WA0000.jpg"></span>
-                        </div>
-                    </div>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
+                   
                 </div>
-                <div class="col s12 m7">
-                <!-- Teal page content  -->
-                    
-                    <h5 class="header">Salon d'adoration</h5>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
                     <p>I am a very simple card. I am good at containing small bits of information.
-                    I am a very simple card. I am good at containing small bits of information.</p>
-                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    <h6 class="date_pub">Publiée</h6>
-                    
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
                 </div>
             </div>
-            <div class="col s12 m12 l12 card-panel white z-depth-1">       
-                <div class="col s12 m5 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <span class="act_img"><img src="../images/IMG_20190721_174414.jpg"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m7">
-                <!-- Teal page content  -->
-                    
-                    <h5 class="header">Salon d'adoration</h5>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am a very simple card. I am good at containing small bits of information.</p>
-                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                    <h6 class="date_pub">Publiée</h6>
-                </div>
-            </div>    
-
         </div>
-       
-    </section>
-              
-    <?php include("../modele/footer.php");?>
-      
-    <?php include("../modele/pied.php");?>
+
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
+                   
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Card Title</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>
+        </div>
+  </div>
+  </body>
+<? include('pied.php');?>

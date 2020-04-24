@@ -1,11 +1,11 @@
-import DEFAULTS from './defaults';
-import TEMPLATE from './template';
-import render from './render';
-import preview from './preview';
-import events from './events';
-import handlers from './handlers';
-import change from './change';
-import methods from './methods';
+import DEFAULTS from './defaults.js';
+import TEMPLATE from './template.js';
+import render from './render.js';
+import preview from './preview.js';
+import events from './events.js';
+import handlers from './handlers.js';
+import change from './change.js';
+import methods from './methods.js';
 import {
   ACTION_ALL,
   CLASS_HIDDEN,
@@ -20,7 +20,7 @@ import {
   REGEXP_DATA_URL_JPEG,
   REGEXP_TAG_NAME,
   WINDOW,
-} from './constants';
+} from './constants.js';
 import {
   addClass,
   addListener,
@@ -36,7 +36,7 @@ import {
   removeClass,
   resetAndGetOrientation,
   setData,
-} from './utilities';
+} from './utilities.js';
 
 const AnotherCropper = WINDOW.Cropper;
 
@@ -87,7 +87,7 @@ class Cropper {
         return;
       }
 
-      // e.g.: "https://example.com/img/picture.jpg"
+      // e.g.: "http://example.com/img/picture.jpg"
       url = element.src;
     } else if (tagName === 'canvas' && window.HTMLCanvasElement) {
       url = element.toDataURL();

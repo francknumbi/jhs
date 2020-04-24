@@ -7,8 +7,9 @@
         private $image;
         private $admin;
 
-        public function __construct($titre,$contenu,$datePub,$image,$admin)
+        public function __construct($id,$titre,$contenu,$datePub,$image,$admin)
         {
+            $this->id=$id;
             $this->titre=$titre;
             $this->contenu=$contenu;
             $this->datePub=$datePub;
@@ -57,7 +58,7 @@
                 $resultat->execute();
                 if($resultat!=null){
                     while($obj=$resultat->fetch()){
-                        $tableau[]=array( "titre"=>$obj['titre'], "contenu"=>$obj['contenu'], "datePub"=>$obj['datePub'], "image"=>$obj['image']);
+                        $tableau[]=new Evenements($obj['id'], $obj['titre'], $obj['contenu'], $obj['datePub'], $obj['image'], $obj['admin']);
                     }
                 }
                 return $tableau;

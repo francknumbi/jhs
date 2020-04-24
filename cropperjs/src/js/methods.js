@@ -10,7 +10,7 @@ import {
   DRAG_MODE_NONE,
   EVENT_ZOOM,
   NAMESPACE,
-} from './constants';
+} from './constants.js';
 import {
   addClass,
   assign,
@@ -27,7 +27,7 @@ import {
   removeClass,
   setData,
   toggleClass,
-} from './utilities';
+} from './utilities.js';
 
 export default {
   // Show the crop box manually

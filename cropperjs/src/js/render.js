@@ -4,7 +4,7 @@ import {
   CLASS_HIDDEN,
   DATA_ACTION,
   EVENT_CROP,
-} from './constants';
+} from './constants.js';
 import {
   addClass,
   assign,
@@ -15,7 +15,7 @@ import {
   removeClass,
   setData,
   setStyle,
-} from './utilities';
+} from './utilities.js';
 
 export default {
   render() {

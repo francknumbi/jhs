@@ -56,7 +56,7 @@
                 $resultat->execute();
                 if($resultat!=null){
                     while($obj=$resultat->fetch()){
-                        $tableau[]=array( "titre"=>$obj['titre'], "contenu"=>$obj['contenu'], "datePub"=>$obj['datePub'], "image"=>$obj['image']);
+                        $tableau[]=new Actualites($obj['id'], $obj['titre'], $obj['contenu'], $obj['datePub'], $obj['image'], $obj['admin']);
                     }
                 }
                 return $tableau;
