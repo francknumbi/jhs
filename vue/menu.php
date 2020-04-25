@@ -1,6 +1,6 @@
 <!--le menu-->
 <header>
-    <nav class="z-depth-0">
+    <nav class="z-depth-1">
         <div class="nav-wrapper white">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">

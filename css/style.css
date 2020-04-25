@@ -1,37 +1,52 @@
 @font-face{
-    font-family: "titre";
-    src: url();
+    font-family: "rubrique";  
+    src: url("../fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Medium.ttf");
 }
-
+@font-face{
+    font-family: "pensee";
+    src: url("../fonts/Tangerine/Tangerine-Bold.ttf");
+}
+@font-face{
+    font-family: "titre";
+    src: url("../fonts/Frank_Ruhl_Libre/FrankRuhlLibre-Light.ttf");
+}
 /*PAGE INDEX*/
+.pensee{
+    font-family: pensee;
+    font-size: 30px;
+    margin: 0px;
+    color: #64b5f6;
+}
 
 .titre{
     color: #64b5f6;
+    font-family: rubrique;
 }
 .lireEvent{
-
+    color: #00796b;
 }
 .lireActu{
-    
+    color: #64b5f6;
 
 }
-.titreActu{
+.lireEvent{
     color: #64b5f6;
+}
+.titreActu{
+    color: #00796b;
 }
 .titreEvent{
-    color: #64b5f6;
+    color: #00796b;
 }
 .titreAnnon{
-    
+    color: #00796b;  
 }
 /*PAGE ANNONCE*/
 .sect{
-    border-bottom:0.5px solid #bbdefb ;
     margin-left:2%;
     margin-right:2%;
-    padding-bottom: 0.5%;
-    padding-top: 0.5%;
 }
 .date{
     float: right;
+    color: #64b5f6;
 }

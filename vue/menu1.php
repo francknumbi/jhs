@@ -1,7 +1,7 @@
 <!--le menu-->
 <header>
-    <nav class="z-depth-0 navbar-fixed">
-        <div class="nav-wrapper light-green lighten-4">
+    <nav class="z-depth-0">
+        <div class="nav-wrapper white">
         <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li ><a href="index.php" class="black-text">Acceuil</a></li>
@@ -18,8 +18,6 @@
         </ul>
     </nav>
 </header>
-
-
 
 <!--l'entete-->
 

@@ -1,34 +1,50 @@
 <? include('entete.php');?>
-<body>
+<body class="">
     <? include('menu.php'); ?>
-    <div class="row">
+    <div class="row sect">
                  
-        <div class="row">
-            <div class="col s12 m3 l3">
-                <div class="card">
-                    <div class="card-image">
-                        <span class="act_img"><img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg"></span>  
-                    </div>
+        <div class="col s12 m6">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
+                </div>
+                <div class="" style="margin-left:3% ;">
+                    <div class="header titreAnnon" >SOIREE DE LOUANGE</div>
+                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    <a class="waves-effect waves-light ">LIRE PLUS</a>
                 </div>
             </div>
-    
-            <div class="col s12 m3 l3">
-            <!-- contenu  -->
-                <h5 class="header titreAnnon">SOIREE DE LOUANGE</h5>
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am axx...</p>
-                    <h6 class="date">le 12/04/2014</h6>
+        </div>
+
+
+        <div class="col s12 m6">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
                 </div>
-                
-                <a class="waves-effect waves-light btn-small">lire plus</a>
+                <div class="" style="margin-left:3% ;">
+                    <div class="header titreAnnon" >SOIREE DE LOUANGE</div>
+                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    <a class="waves-effect waves-light ">LIRE PLUS</a>
+                </div>
             </div>
-            
         </div>
-        <div class="row">
-            
+
+
+        <div class="col s12 m6">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg">
+                </div>
+                <div class="" style="margin-left:3% ;">
+                    <div class="header titreAnnon" >SOIREE DE LOUANGE</div>
+                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                    <a class="waves-effect waves-light ">LIRE PLUS</a>
+                </div>
+            </div>
         </div>
-        
     </div>
+    
+</div>
 
 <?include('pied.php');?>

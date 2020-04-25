@@ -1,8 +1,8 @@
 <? include('entete.php');?>
-<body class=" green lighten-5">
+<body class="">
     <? include('menu.php'); ?>
 
-    <div class="row sect">
+    <div class="row" style="margin-left: 3%;margin-right:3%">
         <h6 class="titreEvent">Evenements</h6>
         <div class="row">
             <div class="col s12 m3 l3">
