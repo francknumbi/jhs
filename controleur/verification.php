@@ -141,7 +141,27 @@
         elseif($_REQUEST['option']=='annonce') {
             if($_REQUEST['fonc']=='modifier') {
                 $annon=Annonces::afficheAnnon();
-                return json_encode($annon);
+                foreach($annon as $obj) {
+                    $titre=$obj->getTitre();
+                    $contenu=$obj->getContenu();
+                    $datePub=$obj->getDatePub();
+                    $image=$obj->getImage();
+                    $identif=$obj->getId();
+                echo("
+                    <div class=\"col s12 m6\">
+                        <div class=\"card horizontal\">
+                            <div class=\"card-image\">
+                                <img src=\"../upload/$image\">
+                            </div>
+                            <div class=\"\" style=\"margin-left:3% ;\">
+                                <div class=\"header titreAnnon\" >$titre</div>
+                                $contenu
+                                <a class=\"waves-effect waves-light \">LIRE PLUS</a>
+                            </div>
+                        </div>
+                    </div>
+                ");
+                }
             }
             elseif($_REQUEST['fonc']=='supprimer') {
                 $annon=Annonces::afficheAnnon();

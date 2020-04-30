@@ -1,4 +1,4 @@
-<?php include('../modele/entete.php');?>
+<?php include('entete.php');?>
 
 <body>
     <div class="row">
@@ -103,4 +103,4 @@
 
 
 </body>
-<?php include("../modele/pied.php");?>
+<?php include("pied.php");?>
