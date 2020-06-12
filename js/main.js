@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // manipulation du DOM
 
-//changement de fonctionnalite et d'option dans le DOM
+//changement de fonctionnalite de la page admin
+// et des options dans le DOM
+
 let choixFonct=document.getElementById('fonchoix');
 let fonct=document.getElementById("ajout");
 let titre=document.getElementById('libele');

@@ -6,30 +6,31 @@
     <title>Design</title>
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <link rel="stylesheet" href="css/iconfont/material-icons.css">
+    <link rel="stylesheet" href="swiper/package/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <? include('vue/menu1.php'); ?>
     <div class="row">
-        <div class="carousel carousel-slider center">
-            
-            <div class="carousel-item red white-text" href="#one!">
-              <h2>First Panel</h2>
-              <p class="white-text">This is your first panel</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pdj-02-jan-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="images/pdj-08-fev-site.jpg__770x433_q85_crop_subsampling-2_upscale.jpg" alt=""></div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class="swiper-slide">Slide 10</div>
+                  </div>
+                  <!-- Add Arrows -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
             </div>
-            <div class="carousel-item amber white-text" href="#two!">
-              <h2>Second Panel</h2>
-              <p class="white-text">This is your second panel</p>
-            </div>
-            <div class="carousel-item green white-text" href="#three!">
-              <h2>Third Panel</h2>
-              <p class="white-text">This is your third panel</p>
-            </div>
-            <div class="carousel-item blue white-text" href="#four!">
-              <h2>Fourth Panel</h2>
-              <p class="white-text">This is your fourth panel</p>
-            </div>
-        </div>
     </div>
 
     <!--PANNEAU EXHORTATION-->
@@ -221,6 +222,43 @@
     <script src="materialize/js/materialize.js"></script>
     <script type="module" src="jquery/src/jquery.js"></script>
     <script type="module" src="cropperjs/src/js/cropper.js"></script>
+    <script type="module" src="swiper/package/js/swiper.min.js"></script>
+    <script type="module">
+        var swiper = new Swiper('.swiper-container', {
+            cssMode: false,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination'
+            },
+            mousewheel: true,
+            keyboard: true,
+            
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 780,
+                  height:250
+                },
+                // when window width is >= 480px
+                480: {
+                  slidesPerView: 1,
+                  spaceBetween: 770,
+                  height:250
+                },
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 1,
+                  spaceBetween: 70,
+                  height:250
+                }
+            }
+        });
+      
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
