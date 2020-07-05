@@ -3,9 +3,9 @@
     <? include('menu.php');?>
 
 
-  <body class="green lighten-5">
+  <body>
     <div class="row sect">
-        <h6 class="titreActu">ACTUALITES</h6>
+        <h5 class="titre" style="margin-left: 10px;color:black">Actualites</h5>
         <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">

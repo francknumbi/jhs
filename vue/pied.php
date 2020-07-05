@@ -5,5 +5,8 @@
     <script type="module" src="../cropperjs/src/js/cropper.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/ajax.js"></script>
+
+   
+
 </body>
 </html>
