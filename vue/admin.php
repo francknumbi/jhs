@@ -19,9 +19,9 @@
 
                 <!-- la structure dropdown -->
                 <ul id='dropdown1' class='dropdown-content teal accent-4'>
-                  <li><a class="white-text event" href="#" ><i class="material-icons white-text">event</i>Evenement</a>  </li>
-                  <li><a href="" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
-                  <li><a href="" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
+                  <li><a href="#!"class="white-text event" href="#" ><i class="material-icons white-text">event</i>Evenement</a>  </li>
+                  <li><a href="#!" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
+                  <li><a href="#!" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
                 </ul>
               </li>
               <li>
@@ -29,9 +29,9 @@
   
                   <!-- la structure dropdown -->
                   <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="" class="white-text event"><i class="material-icons white-text">event</i>Evenement</a></li>
-                    <li><a href="" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
-                    <li><a href="" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
+                    <li><a href="#!" class="white-text event"><i class="material-icons white-text">event</i>Evenement</a></li>
+                    <li><a href="#!" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
+                    <li><a href="#!" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
                   </ul>
               </li>
               <li>
@@ -39,9 +39,9 @@
   
                   <!-- la structure dropdown -->
                   <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="" class="white-text event"><i class="material-icons white-text">event</i>Evenement</a></li>
-                  <li><a href="" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
-                  <li><a href="" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
+                    <li><a href="#!" class="white-text event"><i class="material-icons white-text">event</i>Evenement</a></li>
+                  <li><a href="#!" class="white-text actu"><i class="material-icons white-text">public</i>Actualites</a></li>
+                  <li><a href="#!" class="white-text annon"><i class="material-icons white-text"></i>Annonces</a></li>
                   </ul>
               </li>
             </ul>
