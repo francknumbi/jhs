@@ -29,7 +29,8 @@
                     $db["5432"],
                     $db["bopfflrvqyucxn"],
                     $db["9ece4a5bba66ee304151683121998bf3ae4b42aab3d3da3b9f62495ee9e4ed2f"],
-                    ltrim($db["da7u2htsam4e4o"], "/")
+                    //ltrim($db["da7u2htsam4e4o"], "/")
+                    $db=["da7u2htsam4e4o"]
                 ));
                 return $connection;
             }
