@@ -34,6 +34,7 @@
         public function getAdmin(){
             return $this->admin;
         }
+
         //methode ajout
         public static function ajoutActu($id,$titre,$contenu,$date,$image,$admin){
             try{
