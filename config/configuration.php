@@ -12,6 +12,20 @@
     define("PWD","9ece4a5bba66ee304151683121998bf3ae4b42aab3d3da3b9f62495ee9e4ed2f");
     define("PORT","5432");
     define("CONNECTION", "pgsql:host=".SERVEUR.";port=".PORT.";dbname=".DB);
+    
+
+    $db = parse_url(getenv("DATABASE_URL"));
+
+    $pdo = new PDO("pgsql:" . sprintf(
+        "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+        $db["ec2-54-247-169-129.eu-west-1.compute.amazonaws.com"],
+        $db["port"],
+        $db["user"],
+        $db["pass"],
+        ltrim($db["path"], "/")
+    ));
+
+
     class Connexion{
         private $connection;
         public function getConnexion(){
